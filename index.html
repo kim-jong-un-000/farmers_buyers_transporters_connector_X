@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Smart Checkout</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+<h1>Smart Calcualtor for Markets</h1>
+<p class="subtitle">Enter items to calculate total</p>
+
+<input type="text" id="name" placeholder="Product Name">
+
+<div class="row">
+<input type="number" id="qty" placeholder="Qty">
+<input type="number" id="price" placeholder="Price">
+</div>
+
+<div class="buttons">
+<button class="add" onclick="addItem()">Add Item</button>
+<button class="delete" onclick="clearList()">Delete Checkout</button>
+</div>
+
+<div id="list"></div>
+
+<div class="total-box">
+<div>Total Amount</div>
+<span id="grandTotal">$0.00</span>
+</div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
